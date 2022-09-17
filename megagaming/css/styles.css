@@ -1,0 +1,561 @@
+/* HENRI LOUW ZDV351JB3
+MAIN CSS STYLIING FOR THE WEBSITE */
+
+
+/* Global CSS STYLING */
+*{
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Bebas Neue';
+}
+
+html{
+    height: 100%;
+    background: url("../Resources/Background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+
+/* NAVBAR */
+
+nav{
+  margin-bottom: 50px;
+  border-bottom: solid #ffffff;
+  border-width: calc(2px + .1vw);
+  height: 80px;
+  width: 100%;
+}
+
+
+.Navlogo {
+  padding: 10px;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+ display: inline-block;
+ line-height: 80px;
+ margin: 0 5px;
+}
+
+nav ul li a{
+  color: white;
+  font-size: 23px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+ }
+
+a:hover,a.active{
+  background: none;
+  color: #c4c4c4
+}
+
+a.active,a.hover{
+  background: #0b4f6c;
+  transition: .5s;
+} 
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+/* MEDIA QUERIES TO MAKE IT INTERACTIVE */
+
+@media (max-width: 952px) {
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn{
+    display: block;
+  }
+
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #0b4f6c;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 9;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a{
+    font-size: 30px;
+  }
+
+  a:hover,a.active{
+    background: none;
+    color: #A14B56
+  }
+
+  #check:checked ~ ul{
+    left: 0;
+  }
+} 
+
+/* MEGAGAMING LOGO AND GIF */
+
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 40px;
+}
+
+.gif {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+.Logo-text {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.Products-three {
+  display: block;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop {
+  width: 100%;
+  max-width: 140px;
+  height: auto;
+  border: 2px solid #ffffff;
+  background: #0b4f6c;
+  color: #ffffff;
+  padding: 12px 32px;
+  border-radius: 8%;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.shop:hover {
+  border: 2px solid #c4c4c4;
+  color: #c4c4c4;
+}
+
+/* FOOTER */
+
+.footer {
+  position:absolute;
+  bottom:0;
+  margin-top: 0px;
+  width: 100%;
+  height: auto;
+  padding: 3px 0;
+  background-color: #ffffff;
+
+}
+
+.footer .social {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: rgb(0, 0, 0);
+}
+
+.footer .social a{
+  font-size: 26px;
+  color: inherit;
+  width: 25px;
+  height: 25px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 8px;
+  opacity: 0.75;
+}
+
+.footer .social a:hover{
+  opacity: 0.9;
+}
+
+.footer .copyright {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 15px;
+  color: #0b4f6c;
+}
+
+/* Login */
+
+.center-login-reg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 3px solid #1d1d1d;
+}
+
+.center-login-reg h1 {
+  text-align: center;
+  font-size: 25px;
+  color: #0b4f6c;
+  letter-spacing: 0.5px;
+  padding: 10px 0 10px 0;
+  border-bottom: 2px solid #0b4f6c;
+}
+
+#login {
+  color: #A14B56;
+}
+
+.center-login-reg form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+form .txt_field {
+  position: relative;
+  border-bottom: 2px solid #0b4f6c;
+  margin: 30px 0;
+}
+
+.txt_field input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+
+.txt_field label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.txt_field span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #0b4f6c;
+  transition: .5s;
+}
+
+.txt_field input:focus ~ label {
+  top: -5px;
+  color: #0b4f6c;
+} 
+.txt_field input:valid ~label {
+  top: -5px;
+  color: #0b4f6c;
+}
+
+.txt_field input:focus ~ span::before {
+  width: 100%;
+}
+
+.txt_field input:valid ~ span::before {
+  width: 100%;
+}
+
+.pass{
+  margin: -5px 0 20px 5px;
+  color: #a6a6a6;
+  cursor: pointer;
+}
+
+.pass:hover {
+  text-decoration: underline;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  background: #0b4f6c;
+  border: 2px solid;
+  border-radius: 15px;
+  font-size: 20px;
+  color: #e9f4fb;
+  font-weight: 300;
+  cursor: pointer;
+  outline: none;
+}
+
+input[type="submit"]:hover {
+  border-color: #A14B56;
+  transition: .5s;
+}
+
+.signup_link{
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #a6a6a6;
+}
+
+.signup_link a{
+  color: #0b4f6c;
+  text-decoration: none;
+}
+
+.signup_link a:hover {
+  text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .center-login-reg {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    background: #ffffff;
+    border-radius: 10px;
+    border: 3px solid rgb(50, 50, 50);
+  }
+  
+}
+
+@media only screen and (max-width: 400px) {
+  .center-login-reg {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    background: #ffffff;
+    border-radius: 10px;
+    border: 3px solid rgb(50, 50, 50);
+  }
+  
+}
+/*
+Colour
+
+Pink #A14B56
+Dark Blue #0b4f6c
+
+*/
+
+
+.shop-button {
+  background: #0b4f6c;
+  color: white;
+  border-radius: 8px;
+  padding: 15px 20px;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.shop-button:hover {
+  background: #0b4f6c;
+  border: 2px solid white;
+  padding: 13px 20px;
+}
+
+/* ---------- SHOPPING CART ----------  */
+
+.remove {
+  background: #0b4f6c;
+  text-align: center;
+  font-size: 15px;
+  color: #ffffff;
+  width: 100%;
+  padding: 3px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin-top: 3px;
+  border-radius: 3px;
+}
+
+h3 {
+  align-items: center;
+}
+
+table{
+  font-size: 20px;
+  max-width: 800px;
+  border-radius: 5px;
+  border: 3px solid #1d1d1d ;
+  background: #ffffff;
+  margin-bottom: 30px;
+}
+
+th {
+  padding: 8px;
+  letter-spacing: 1px;
+  color: white;
+  background: #0b4f6c;
+}
+
+tr {
+  padding: 8px;
+  color: #0b4f6c;
+}
+
+.total-bottom {
+  border-top: 1px solid #0b4f6c ;
+  color: #ffffff;
+  background: #0b4f6c;
+}
+
+td {
+  padding: 8px;
+}
+
+.Checkout-button {
+  background: #0b4f6c;
+  color: white;
+  border-radius: 8px;
+  padding: 15px 20px;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.Checkout-button:hover {
+  background: #0b4f6c;
+  border: 2px solid white;
+  padding: 13px 20px;
+}
+
+@media (max-width: 858px) {
+  table  {
+    width: 80%;
+  }
+}
+
+@media (max-width: 560px) {
+  table  {
+    width: 75%;
+    font-size: 15px;
+    }
+  }
+
+@media (max-width: 430px) {
+  table  {
+    width: 70%;
+    font-size: 12px;
+    }
+  }
+
+/* -------- PAYMENT -------- */
+
+.payment-title {
+  width: 100%;
+  letter-spacing: 1px;
+  padding: 5px;
+  font-size: 25px;
+}
+
+.inputpayment {
+  padding: 8px;
+}
+
+.paymentinfo {
+  align-items: center;
+  font-size: 20px;
+}
+
+.make-payment {
+  background: #0b4f6c;
+  color: white;
+  border-radius: 8px;
+  padding: 15px 20px;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.make-payment:hover {
+  background: #0b4f6c;
+  border: 2px solid white;
+  padding: 13px 20px;
+}
+
+.cards {
+  max-width: 250px;
+  height: auto;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .cards {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .cards {
+    width: 70%;
+  }
+}
